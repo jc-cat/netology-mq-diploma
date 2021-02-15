@@ -4,6 +4,9 @@ html {
 
 body,
 h1,
+h2,
+h3,
+h4,
 ul,
 button {
   margin: 0;
@@ -111,9 +114,79 @@ button {
 
 .intro-text {
   font-family: OpenSans, Arial, sans-serif;
-  text-transform: uppercase;
   font-size: 2.6rem;
   line-height: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.trends {
+  width: 100vw;
+  min-width: 36rem;
+}
+
+.trend {
+  position: relative;
+}
+
+.trend::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.trend-img {
+  width: 100%;
+}
+
+.trend-box {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1;
+  border: 3px solid rgba(181, 159, 91, 0.6);
+  padding: 3rem 2rem;
+}
+
+.category-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.category-link {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b59f5b;
+}
+
+.category-list-item:nth-child(n+2) {
+  margin-left: 2rem;
+}
+
+.trend-title {
+  margin-top: 1rem;
+}
+
+.trend-title-text a {
+  font-family: OpenSans, Arial, sans-serif;
+  text-decoration: none;  
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
   font-weight: 700;
   color: #ffffff;
 }
@@ -203,6 +276,7 @@ button {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 1.3rem;
     line-height: 1.3rem;
+    font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
