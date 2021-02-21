@@ -35,7 +35,7 @@ button {
   background-size: cover;
   box-sizing: border-box;
   width: 100vw;
-  min-width: 36rem;
+  min-width: 30rem;
   padding: 3rem 1.5rem 21rem 1.5rem;
 }
 
@@ -72,9 +72,11 @@ button {
 }
 
 .menu-burger::before,
+.menu-burger-label,
 .menu-burger::after {
   content: "";
   position: absolute;
+  left: 0;
   right: 0;
 
   width: 100%;
@@ -86,18 +88,12 @@ button {
   top: 0;
 }
 
-.menu-burger::after {
-  top: 80%;
+.menu-burger-label {
+  top: 40%;
 }
 
-.menu-burger-label {
-  position: absolute;
-  right: 0;
-  top: 40%;
-
-  width: 100%;
-  height: 15%;
-  background-color: #ffffff;
+.menu-burger::after {
+  top: 80%;
 }
 
 .logo-img {
@@ -123,22 +119,20 @@ button {
 
 .trends {
   width: 100vw;
-  min-width: 36rem;
+  min-width: 30rem;
 }
 
 .trends-title {
-  position: relative;
   margin-top: 4rem;
-  padding-bottom: 1.3rem;
   margin-bottom: 2.5rem;
 }
 
 .trends-title::after {
-  content:"";
-  position: absolute;
-  left: auto;
-  right: auto;
-  bottom: 0;
+  content: "";
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   width: 6.6rem;
   height: 0.3rem;
   background-color: #b59f5b;
