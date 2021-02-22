@@ -117,17 +117,17 @@ button {
   color: #ffffff;
 }
 
-.trends {
+.trendy-now {
   width: 100vw;
   min-width: 30rem;
 }
 
-.trends-title {
+.trendy-now-title {
   margin-top: 4rem;
   margin-bottom: 2.5rem;
 }
 
-.trends-title::after {
+.trendy-now-title::after {
   content: "";
   margin-top: 1rem;
   margin-left: auto;
@@ -139,7 +139,7 @@ button {
   opacity: 0.4;
 }
 
-.trends-title-text {
+.trendy-now-title-text {
   font-family: OpenSans, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -149,8 +149,14 @@ button {
   text-align: center;
 }
 
+.trends {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .trend {
   position: relative;
+  width: 100%;
   margin-top: 0.2rem;
 }
 
@@ -180,7 +186,7 @@ button {
   bottom: 1.5rem;
   z-index: 1;
   border: 3px solid rgba(181, 159, 91, 0.6);
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2.5rem 2rem;
 }
 
 .category-list {
@@ -217,6 +223,21 @@ button {
   color: #ffffff;
 }
 
+@media (max-width: 640px)
+   and (orientation: landscape) {
+  .trend {
+    width: calc(50% - 0.1rem);
+  }
+
+  .trend:nth-child(odd) {
+    margin-right: 0.1rem;
+  }
+
+  .trend:nth-child(even) {
+    margin-left: 0.1rem;
+  }
+}
+
 @media (min-width: 641px) {
   .top-panel {
     display: flex;
@@ -238,9 +259,15 @@ button {
     margin-top: 0;
     width: 100%;
   }
+
+  .trend-box {
+    left: 2rem;
+    right: 2rem;
+  }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (min-width: 641px)
+   and (max-width: 1199px) {
   .header {
     background-image: url("../images/banner-bg-tablet.jpg");
     padding: 6.5rem 3.5rem 12rem 3.5rem;
@@ -263,6 +290,37 @@ button {
   .intro-text {
     font-size: 4rem;
     line-height: 5.5rem;
+  }
+
+  .trend {
+    width: calc(50% - 0.1rem);
+  }
+
+  .trend:nth-child(odd) {
+    margin-right: 0.1rem;
+  }
+
+  .trend:nth-child(even) {
+    margin-left: 0.1rem;
+  }
+
+  .trend-title-text a {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .trend-box {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 641px)
+   and (max-width: 1199px)
+   and (orientation: landscape) {
+  .trend {
+    width: calc(25% - 0.2rem);
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
   }
 }
 
@@ -325,5 +383,20 @@ button {
   .intro-text {
     font-size: 4.5rem;
     line-height: 7.5rem;
+  }
+
+  .trend {
+    width: calc(25% - 0.4rem);
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .trend-title-text a {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .trend-box {
+    padding: 3.5rem;
   }
 }
