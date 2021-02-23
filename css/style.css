@@ -125,7 +125,7 @@ button {
 
 .trendy-now-title {
   margin-top: 4rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .trendy-now-title::after {
@@ -174,8 +174,7 @@ button {
 
 .trend-img {
   width: 100%;
-  aspect-ratio: 1440/900;
-  /*************** CHECK IF IT WORKS ***************/
+  aspect-ratio: 1.565; /* 360x230 */
 }
 
 .trend-box {
@@ -228,8 +227,17 @@ button {
   padding: 4.5rem 1.5rem;
 }
 
+.post:not(:first-child) {
+  margin-top: 3.5rem;
+}
+
 .post-img {
   width: 100%;
+}
+
+.category {
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .post-title a {
@@ -319,6 +327,11 @@ button {
     left: 2rem;
     right: 2rem;
   }
+
+  .post-text {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
 }
 
 @media (min-width: 641px)
@@ -347,6 +360,16 @@ button {
     line-height: 5.5rem;
   }
 
+  .trendy-now-title {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .trendy-now-title-text {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
   .trend {
     width: calc(50% - 0.1rem);
   }
@@ -359,13 +382,34 @@ button {
     margin-left: 0.1rem;
   }
 
+  .trend-img {
+/*    aspect-ratio: 1.555; /* 384x247 */
+  }
+
+  .trend-box {
+    padding: 3rem;
+  }
+
   .trend-title-text a {
     font-size: 1.7rem;
     line-height: 2.2rem;
   }
 
-  .trend-box {
-    padding: 3rem;
+  .content {
+    padding: 5rem 3.5rem;
+  }
+
+  .posts {
+    width: 55.5%;
+  }
+
+  .post:not(:first-child) {
+    margin-top: 4rem;
+  }
+
+  .post-title a {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -373,15 +417,29 @@ button {
    and (max-width: 1199px)
    and (orientation: landscape) {
   .trend {
-    width: calc(25% - 0.2rem);
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
+    width: calc(25% - 0.3rem);
+  }
+
+  .trend:not(:nth-child(4n+1)) {
+    margin-left: 0.2rem;
+  }
+
+  .trend:not(:nth-child(4n)) {
+    margin-right: 0.2rem;
   }
 }
 
 @media (max-width: 1199px) {
   .menu-list {
     display: none;
+  }
+
+  .post::after {
+    content: "";
+    margin-top: 2.2rem;
+    display: block;
+    height: 0.3rem;
+    background-color: #eeeeee;
   }
 }
 
@@ -440,10 +498,34 @@ button {
     line-height: 7.5rem;
   }
 
+  .trendy-now-title {
+    margin-top: 5.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .trendy-now-title-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
   .trend {
-    width: calc(25% - 0.4rem);
+    width: calc(25% - 0.3rem);
+  }
+
+  .trend:not(:nth-child(4n+1)) {
     margin-left: 0.2rem;
+  }
+
+  .trend:not(:nth-child(4n)) {
     margin-right: 0.2rem;
+  }
+
+  .trend-img {
+    aspect-ratio: 1.28; /* 410x320 */
+  }
+
+  .trend-box {
+    padding: 3.5rem 3rem;
   }
 
   .trend-title-text a {
@@ -451,7 +533,38 @@ button {
     line-height: 2.4rem;
   }
 
-  .trend-box {
-    padding: 3.5rem;
+  /* 15 + (380 + 30 + 380) + 110 + (270) + 15 = 1170 */
+  .content {
+    box-sizing: border-box;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6.5rem 1.5rem;
+  }
+
+  .posts {
+    width: 67.5%;
+  }
+
+  .post:not(:first-child) {
+    margin-top: 6rem;
+  }
+
+  .post {
+    display: flex;
+  }
+
+  .post-preview,
+  .post-info {
+    width: calc(50% - 1.5rem);
+  }
+
+  .post-info {
+    margin-left: 3rem;
+  }
+
+  .post-title a {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
 }
