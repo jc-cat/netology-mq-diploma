@@ -159,6 +159,10 @@ button {
   position: relative;
   width: 100%;
   margin-top: 0.2rem;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .trend::after {
@@ -172,20 +176,30 @@ button {
   opacity: 0.6;
 }
 
-.trend-img {
-  width: 100%;
-  aspect-ratio: 1.565; /* 360x230 */
-  object-fit: cover;
+.trend1 {
+  background-image: url("../images/trend1.jpg");
+  flex-grow: 1;
+}
+
+.trend2 {
+  background-image: url("../images/trend2.jpg");
+  flex-grow: 1;
+}
+
+.trend3 {
+  background-image: url("../images/trend3.jpg");
+  flex-grow: 1;
+}
+
+.trend4 {
+  background-image: url("../images/trend4.jpg");
+  flex-grow: 1;
 }
 
 .trend-box {
-  content: "";
-  position: absolute;
-  top: auto;
-  left: 1.5rem;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  position: relative;
   z-index: 1;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
   border: 3px solid rgba(181, 159, 91, 0.6);
   padding: 3rem 2rem 2.5rem 2rem;
 }
@@ -301,10 +315,6 @@ button {
   .trend:nth-child(even) {
     margin-left: 0.1rem;
   }
-
-  .trend-img {
-    aspect-ratio: 1.4;
-  }
 }
 
 @media (min-width: 641px) {
@@ -378,13 +388,9 @@ button {
     margin-left: 0.1rem;
   }
 
-  .trend-img {
-    aspect-ratio: 1.4;
-  }
-
   .trend-box {
-    left: 2rem;
-    right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 3rem;
   }
 
@@ -429,10 +435,6 @@ button {
 
   .trend:not(:nth-child(4n)) {
     margin-right: 0.2rem;
-  }
-
-  .trend-img {
-    aspect-ratio: 0.3;
   }
 }
 
@@ -527,13 +529,9 @@ button {
     margin-right: 0.2rem;
   }
 
-  .trend-img {
-    aspect-ratio: 1.10;
-  }
-
   .trend-box {
-    left: 2rem;
-    right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 3.5rem 3rem;
   }
 
