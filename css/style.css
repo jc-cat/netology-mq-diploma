@@ -349,6 +349,133 @@ button {
   color: #000000;
 }
 
+.search {
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px 1px 1px 1px);
+  position: absolute;
+}
+
+.search-field {
+  box-sizing: border-box;
+  width: calc(100% - 5rem);
+  border: none;
+  background-color: #f3f7f5;
+  padding: 1.5rem 2rem;
+
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.search-button {
+  border: none;
+  width: 5rem;
+  padding: 1.5rem;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+
+.subscribe-field {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  background-color: #f3f7f5;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.subscribe-button {
+  border: none;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 4rem;
+  background-color: #b59f5b;
+  cursor: pointer;
+  
+  font-family: OpenSans, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sidebar-category-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem; /* 50 - 25 = 25 */
+}
+
+.sidebar-category-link {
+  border: 3px solid #f3f3f1;
+  padding: 0.5rem 1.3rem;
+
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.sidebar-category-list-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.sidebar-category-list-item {
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-theme-list-item {
+  list-style: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ededed;
+}
+
+.sidebar-theme-list-item:first-child {
+  padding-top: 0;
+}
+
+.sidebar-theme-link {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 0.1rem;
+}
+
+.sidebar-theme-amount {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  color: #b59f5b;
+  vertical-align: 0.4rem;
+}
+
 @media (max-width: 640px)
    and (orientation: landscape) {
   .trend {
@@ -402,6 +529,18 @@ button {
 
   .latest-post-info {
     width: calc(74% - 2rem);
+  }
+
+  .search {
+    margin-bottom: 6rem;
+  }
+
+  .subscribe-button {
+    margin-bottom: 6rem;
+  }
+
+  .sidebar-category-list {
+    margin-bottom: 4.5rem; /* 70 - 25 = 45 */
   }
 }
 
