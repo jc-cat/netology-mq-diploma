@@ -306,6 +306,10 @@ button {
   margin-top: 1rem;
 }
 
+.sidebar {
+  margin-bottom: 4rem;
+}
+
 /* 70 + 20 + 240 = 330 */
 .latest-post {
   display: flex;
@@ -476,6 +480,68 @@ button {
   vertical-align: 0.4rem;
 }
 
+.footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f7f5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+  list-style: none;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.social-link {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-size: 2.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-link-twitter {
+  background-image: url("../svg/004-twitter.svg");
+}
+
+.social-link-pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.social-link-facebook {
+  background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.social-link-instagram {
+  background-image: url("../svg/005-instagram.svg");
+}
+
+.social-link-tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright-link {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #999999;
+}
+
 @media (max-width: 640px)
    and (orientation: landscape) {
   .trend {
@@ -516,10 +582,7 @@ button {
   .content {
     display: flex;
     justify-content: space-between;
-  }
-
-  .posts {
-    margin-bottom: 0;
+    flex-wrap: wrap;
   }
 
   /* .sidebar = 70 + 20 + 181 = 271 */
@@ -541,6 +604,10 @@ button {
 
   .sidebar-category-list {
     margin-bottom: 4.5rem; /* 70 - 25 = 45 */
+  }
+
+  .shop {
+    width: 100%;
   }
 }
 
@@ -615,6 +682,7 @@ button {
 
   .posts {
     width: 56%;
+    margin-bottom: 5rem;
   }
 
   .post:not(:first-child) {
@@ -633,6 +701,13 @@ button {
 
   .sidebar {
     width: 39%;
+    margin-bottom: 5rem;
+  }
+
+  .footer {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -770,6 +845,7 @@ button {
 
   .posts {
     width: 69%;
+    margin-bottom: 6rem;
   }
 
   .post:not(:first-child) {
@@ -805,5 +881,10 @@ button {
 
   .sidebar {
     width: 24%;
+    margin-bottom: 6rem;
+  }
+
+  .social {
+    margin-bottom: 7rem;
   }
 }
