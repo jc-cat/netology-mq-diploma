@@ -158,8 +158,14 @@ button {
 
 .trend {
   position: relative;
+  box-sizing: border-box;
   width: 100%;
   margin-top: 0.2rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 
   background-position: center center;
   background-repeat: no-repeat;
@@ -196,7 +202,8 @@ button {
 .trend-box {
   position: relative;
   z-index: 1;
-  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
   border: 3px solid rgba(181, 159, 91, 0.6);
   padding: 3rem 2rem 2.5rem 2rem;
 }
@@ -481,9 +488,21 @@ button {
 }
 
 .product {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding: 0 2rem 3rem 2rem;
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  /* .product-preview = 360 - 30 - 40 */
+  top: calc((100vw - 3rem - 4rem) - 3rem);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
 .product:first-child {
@@ -494,22 +513,8 @@ button {
   margin-bottom: 3rem;
 }
 
-.product-info {
-  position: relative;
-}
-
 .product-preview {
   margin-bottom: 2rem;
-}
-
-.product-info::after {
-  content: "";
-  position: absolute;
-  top: -5rem;
-  left: -2rem;
-  right: -2rem;
-  bottom: -2.5rem;
-  border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
 .product-img {
@@ -672,6 +677,11 @@ button {
     width: 100%;
   }
 
+  .trend {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .content {
     display: flex;
     justify-content: space-between;
@@ -701,6 +711,20 @@ button {
 
   .shop {
     width: 100%;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product:first-child {
+    margin-top: 0;
+  }
+
+  .product:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -754,8 +778,6 @@ button {
   }
 
   .trend-box {
-    margin-left: 2rem;
-    margin-right: 2rem;
     padding: 3rem;
   }
 
@@ -791,6 +813,19 @@ button {
   .sidebar {
     width: 39%;
     margin-bottom: 5rem;
+  }
+
+  .product {
+    width: calc(50% - 1.5rem);
+  }
+
+  .product::after {
+    /* .product-preview = (768 - 70) / 2 - 15 - 40 */
+    top: calc(((100vw - 7rem) / 2 - 1.5rem - 4rem) * 227 / 292 - 3rem);
+  }
+
+  .product:nth-child(n+3) {
+    margin-top: 3rem;
   }
 
   .footer {
@@ -913,8 +948,6 @@ button {
   }
 
   .trend-box {
-    margin-left: 2rem;
-    margin-right: 2rem;
     padding: 3.5rem 3rem;
   }
 
@@ -971,6 +1004,18 @@ button {
   .sidebar {
     width: 24%;
     margin-bottom: 6rem;
+  }
+
+  .product {
+    width: 30%;
+  }
+
+  .product::after {
+    top: 17rem;
+  }
+
+  .product:nth-child(n+4) {
+    margin-top: 3rem;
   }
 
   .product-title a {
