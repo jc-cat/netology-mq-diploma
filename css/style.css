@@ -373,6 +373,13 @@ button {
   position: absolute;
 }
 
+/* iOS style OFF */
+input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+  margin: 0;
+}
+
 .search-field {
   box-sizing: border-box;
   width: calc(100% - 5rem);
