@@ -419,16 +419,12 @@
         <!----- PRODUCT #1 ----->
         <article class="product">
           <div class="product-preview">
-            <img class="product-img"
-                 srcset="./images/shop-item-mobile1.jpg 640w,
-                         ./images/shop-item-tablet1.jpg 1199w,
-                         ./images/shop-item-desk1.jpg 1200w"
-                 sizes="(-webkit-min-device-pixel-ratio: 1.001)
-                        and (max-width: 640px) 300px,
-                        (-webkit-min-device-pixel-ratio: 1.001)
-                        and (min-width: 641px) and (max-width: 1199px) 500px"
-                 src="./images/shop-item-desk1.jpg"
-                 alt="Подушки на диван">
+            <picture class="product-img">
+              <source srcset="./images/shop-item-mobile1.jpg" type="image/jpeg" media="(max-width:640px)">
+              <source srcset="./images/shop-item-tablet1.jpg" type="image/jpeg" media="(min-width:641px) and (max-width:1199px)">
+              <source srcset="./images/shop-item-desk1.jpg" type="image/jpeg" media="(min-width:1200px)">
+              <img src="./images/shop-item-desk1.jpg" alt="Подушки на диван">
+            </picture>
           </div>
           <div class="product-info">
             <h3 class="product-title"><a href="#0">Подушки на диван</a></h3>
@@ -451,16 +447,12 @@
         <!----- PRODUCT #2 ----->
         <article class="product">
           <div class="product-preview">
-            <img class="product-img"
-                 srcset="./images/shop-item-mobile2.jpg 640w,
-                         ./images/shop-item-tablet2.jpg 1199w,
-                         ./images/shop-item-desk2.jpg 1200w"
-                 sizes="(-webkit-min-device-pixel-ratio: 1.001)
-                        and (max-width: 640px) 300px,
-                        (-webkit-min-device-pixel-ratio: 1.001)
-                        and (min-width: 641px) and (max-width: 1199px) 500px"
-                 src="./images/shop-item-desk2.jpg"
-                 alt="Кукла «Зайчик»">
+            <picture class="product-img">
+              <source srcset="./images/shop-item-mobile2.jpg" type="image/jpeg" media="(max-width:640px)">
+              <source srcset="./images/shop-item-tablet2.jpg" type="image/jpeg" media="(min-width:641px) and (max-width:1199px)">
+              <source srcset="./images/shop-item-desk2.jpg" type="image/jpeg" media="(min-width:1200px)">
+              <img src="./images/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+            </picture>
           </div>
           <div class="product-info">
             <h3 class="product-title"><a href="#0">Кукла «Зайчик»</a></h3>
@@ -480,16 +472,12 @@
         <!----- PRODUCT #3 ----->
         <article class="product">
           <div class="product-preview">
-            <img class="product-img"
-                 srcset="./images/shop-item-mobile3.jpg 640w,
-                         ./images/shop-item-tablet3.jpg 1199w,
-                         ./images/shop-item-desk3.jpg 1200w"
-                 sizes="(-webkit-min-device-pixel-ratio: 1.001)
-                        and (max-width: 640px) 300px,
-                        (-webkit-min-device-pixel-ratio: 1.001)
-                        and (min-width: 641px) and (max-width: 1199px) 500px"
-                 src="./images/shop-item-desk3.jpg"
-                 alt="Шестиугольная рамка">
+            <picture class="product-img">
+              <source srcset="./images/shop-item-mobile3.jpg" type="image/jpeg" media="(max-width:640px)">
+              <source srcset="./images/shop-item-tablet3.jpg" type="image/jpeg" media="(min-width:641px) and (max-width:1199px)">
+              <source srcset="./images/shop-item-desk3.jpg" type="image/jpeg" media="(min-width:1200px)">
+              <img src="./images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+            </picture>
           </div>
           <div class="product-info">
             <h3 class="product-title"><a href="#0">Шестиугольная рамка</a></h3>
