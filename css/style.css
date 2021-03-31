@@ -16,6 +16,15 @@ ul {
   padding: 0;
 }
 
+/* iOS style OFF */
+input[type=search],
+input[type=email],
+select,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -374,19 +383,13 @@ ul {
   position: absolute;
 }
 
-/* iOS style OFF */
-input[type=search] {
-  -webkit-appearance: none;
-  border-radius: 0;
-  margin: 0;
-}
-
 .search-field {
   box-sizing: border-box;
   width: calc(100% - 5rem);
   border: none;
   background-color: #f3f7f5;
   padding: 1.5rem 2rem;
+  margin: 0;
 
   font-family: OpenSans, Arial, sans-serif;
   font-size: 1.3rem;
@@ -755,6 +758,20 @@ input[type=search] {
   color: #ffffff;
 }
 
+@media (max-width: 640px) {
+  .menu-list {
+    display: none;
+  }
+
+  .post::after {
+    content: "";
+    margin-top: 2.2rem;
+    display: block;
+    height: 0.3rem;
+    background-color: #eeeeee;
+  }
+}
+
 @media (max-width: 640px)
    and (orientation: landscape) {
   .trend {
@@ -869,6 +886,10 @@ input[type=search] {
     transform: translateY(-50%);
   }
 
+  .menu-list {
+    display: none;
+  }
+
   .intro {
     margin-top: 8rem;
   }
@@ -923,6 +944,15 @@ input[type=search] {
     margin-top: 4rem;
   }
 
+  .post::after {
+    content: "";
+    margin-top: 2.2rem;
+    display: block;
+    height: 0.3rem;
+    background-color: #eeeeee;
+  }
+}
+
   .post-title a {
     font-size: 1.7rem;
     line-height: 2.2rem;
@@ -971,20 +1001,6 @@ input[type=search] {
 
   .trend:not(:nth-child(4n)) {
     margin-right: 0.2rem;
-  }
-}
-
-@media (max-width: 1199px) {
-  .menu-list {
-    display: none;
-  }
-
-  .post::after {
-    content: "";
-    margin-top: 2.2rem;
-    display: block;
-    height: 0.3rem;
-    background-color: #eeeeee;
   }
 }
 
