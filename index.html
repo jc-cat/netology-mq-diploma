@@ -540,5 +540,52 @@
     </div>
   </footer>
   <!--------------- END OF FOOTER --------------->
+  <!--------------- POPUP --------------->
+  <div class="_hidden">
+    <div class="popup">
+      <section class="feedback">
+        <div class="section-title">
+          <h2 class="section-title-text">Ваш фидбек</h2>
+        </div>
+        <form class="feedback-form">
+          <!----- QUESTION #1 ----->
+          <div class="feedback-form-row">
+            <label class="feedback-form-group">
+              <span class="feedback-form-hint post-text">Как часто Вы заходите на сайт?</span>
+              <select class="feedback-form-select post-text">
+                <option>Пару раз в неделю</option>
+                <option selected>Почти каждый день</option>
+                <option>Ежедневно</option>
+              </select>
+            </label>
+          </div>
+          <!----- QUESTION #2 ----->
+          <div class="feedback-form-row">
+            <span class="feedback-form-hint post-text">Вы подписаны на e-mail рассылку?</span>
+            <label class="feedback-form-radio-group">
+              <input type="radio" class="feedback-form-radio" name="feedback-form-radio">
+              <span class="feedback-form-radio-text post-text">Да</span>
+            </label>
+            <label class="feedback-form-radio-group">
+              <input type="radio" class="feedback-form-radio" name="feedback-form-radio">
+              <span class="feedback-form-radio-text post-text">Нет</span>
+            </label>
+          </div>
+          <!----- QUESTION #3 ----->
+          <div class="feedback-form-row">
+            <label class="feedback-form-group">
+              <span class="feedback-form-hint post-text">Расскажите, какой контент Вы хотели бы видеть на нашем сайте?</span>
+              <textarea type="text" class="feedback-form-textarea-field post-text" placeholder="Может, больше рецептов?" required></textarea>
+            </label>
+          </div>
+          <!----- SUBMIT ----->
+          <div class="feedback-form-row">
+            <button type="submit" class="feedback-form-button">Отправить</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <!--------------- END OF POPUP --------------->
 </body>
 </html>
