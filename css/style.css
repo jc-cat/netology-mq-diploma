@@ -338,7 +338,7 @@ textarea {
 
 .latest-post-preview {
   width: 21%;
-  margin-right: 2rem;
+  margin-right: 6%;
 }
 
 .latest-post-img {
@@ -346,7 +346,7 @@ textarea {
 }
 
 .latest-post-info {
-  width: calc(79% - 2rem);
+  width: 73%;
 }
 
 .latest-post-date {
@@ -385,7 +385,7 @@ textarea {
 
 .search-field {
   box-sizing: border-box;
-  width: calc(100% - 5rem);
+  width: 85%;
   border: none;
   background-color: #f3f7f5;
   padding: 1.5rem 2rem;
@@ -400,8 +400,8 @@ textarea {
 
 .search-button {
   border: none;
-  width: 5rem;
-  padding: 1.5rem;
+  width: 15%;
+  padding: 1.5rem 5%;
   background-color: #b59f5b;
   cursor: pointer;
 }
@@ -509,7 +509,7 @@ textarea {
   content: "";
   position: absolute;
   /* .product-preview = 360 - 30 - 40 */
-  top: calc((100vw - 3rem - 4rem) - 3rem);
+  top: 70vw;
   left: 0;
   right: 0;
   bottom: 0;
@@ -670,7 +670,7 @@ textarea {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 3rem);
+  width: 92%;
   padding: 2.5rem 2.5rem 3rem 2.5rem;
 
   background-color: #ffffff;
@@ -775,15 +775,15 @@ textarea {
 @media (max-width: 640px)
    and (orientation: landscape) {
   .trend {
-    width: calc(50% - 0.1rem);
+    width: 49.8%;
   }
 
   .trend-1of2 {
-    margin-right: 0.1rem;
+    margin-right: 0.2%;
   }
 
   .trend-2of2 {
-    margin-left: 0.1rem;
+    margin-left: 0.2%;
   }
 }
 
@@ -823,10 +823,11 @@ textarea {
   /* .sidebar = 70 + 20 + 181 = 271 */
   .latest-post-preview {
     width: 26%;
+    margin-right: 7%;
   }
 
   .latest-post-info {
-    width: calc(74% - 2rem);
+    width: 67%;
   }
 
   .search {
@@ -910,15 +911,15 @@ textarea {
   }
 
   .trend {
-    width: calc(50% - 0.1rem);
+    width: 49.8%;
   }
 
   .trend-1of2 {
-    margin-right: 0.1rem;
+    margin-right: 0.2%;
   }
 
   .trend-2of2 {
-    margin-left: 0.1rem;
+    margin-left: 0.2%;
   }
 
   .trend-box {
@@ -969,15 +970,15 @@ textarea {
   }
 
   .product {
-    width: calc(50% - 1.5rem);
+    width: 48.5%;
   }
 
   .product::after {
     /* .product-preview = (768 - 70) / 2 - 15 - 40 */
-    top: calc(((100vw - 7rem) / 2 - 1.5rem - 4rem) * 227 / 292 - 3rem);
+    top: 25vw;
   }
 
-  .product-after-three {
+  .product-after-two {
     margin-top: 3rem;
   }
 
@@ -992,15 +993,15 @@ textarea {
    and (max-width: 1199px)
    and (orientation: landscape) {
   .trend {
-    width: calc(25% - 0.3rem);
+    width: 24.7%;
   }
 
   .trend-not-1of4 {
-    margin-left: 0.2rem;
+    margin-left: 0.2%;
   }
 
   .trend-not-4of4 {
-    margin-right: 0.2rem;
+    margin-right: 0.2%;
   }
 }
 
@@ -1075,15 +1076,15 @@ textarea {
   }
 
   .trend {
-    width: calc(25% - 0.3rem);
+    width: 24.7%;
   }
 
   .trend-not-1of4 {
-    margin-left: 0.2rem;
+    margin-left: 0.2%;
   }
 
   .trend-not-4of4 {
-    margin-right: 0.2rem;
+    margin-right: 0.2%;
   }
 
   .trend-box {
@@ -1119,7 +1120,7 @@ textarea {
 
   .post-preview,
   .post-info {
-    width: calc(50% - 1.5rem);
+    width: 48%;
   }
 
   .post-preview {
@@ -1127,7 +1128,7 @@ textarea {
   }
 
   .post-info {
-    margin-left: 3rem;
+    margin-left: 4%;
   }
 
   .post-title a {
@@ -1151,6 +1152,10 @@ textarea {
 
   .product::after {
     top: 17rem;
+  }
+
+  .product-after-two {
+    margin-top: 0;
   }
 
   .product-after-three {
